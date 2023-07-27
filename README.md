@@ -1,3 +1,29 @@
+# nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres
+
+# 🚀 💠 Personal website and blog made using Next.js, TypeScript, Tailwind CSS, MDX Bundler, and Prisma with PostgreSQL 🚀
+
+https://github.com/coding-to-music/nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres
+
+From / By https://github.com/theodorusclarence/theodorusclarence.com
+
+## Environment variables:
+
+```java
+
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres.git
+git push -u origin main
+```
+
 <div align="center">
   <h1>theodorusclarence.com</h1>
   <p>💠 Personal website and blog made using Next.js, TypeScript, Tailwind CSS, MDX Bundler, Prisma, and SWR.</p>
