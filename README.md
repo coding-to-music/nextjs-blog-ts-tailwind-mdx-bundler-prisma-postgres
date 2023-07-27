@@ -6,6 +6,8 @@ https://github.com/coding-to-music/nextjs-blog-ts-tailwind-mdx-bundler-prisma-po
 
 From / By https://github.com/theodorusclarence/theodorusclarence.com
 
+https://theodorusclarence.com/
+
 ## Environment variables:
 
 ```java
