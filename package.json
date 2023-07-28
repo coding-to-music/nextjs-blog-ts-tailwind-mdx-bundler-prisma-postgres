@@ -16,7 +16,7 @@
     "cy:headless": "cypress run",
     "postbuild": "next-sitemap",
     "mdgen": "node scripts/cross-post.js",
-    "deploy": "git add . && git commit -m Build && git push",
+    "deploy": "git add . && git commit -m 'chore: saving work' && git push",
     "prepare": "husky install"
   },
   "dependencies": {

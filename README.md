@@ -10,8 +10,34 @@ https://theodorusclarence.com/
 
 ## Environment variables:
 
-```java
+see .env.example
 
+```java
+# View & likes tracking
+FAUNA_SECRET=
+DATABASE_URL="postgresql://clarence:@localhost:5432/theodorusclarence"
+IP_ADDRESS_SALT=
+DEVTO_KEY=
+
+# Spotify Credentials
+# used for /api/spotify widget
+SPOTIFY_CLIENT_ID=
+SPOTIFY_CLIENT_SECRET=
+SPOTIFY_REFRESH_TOKEN=
+
+# Dev tools page hidden route
+ADMIN_PASSWORD=admin
+
+# Revue Subscription
+REVUE_TOKEN=
+
+# Client .envs
+# These envs are feature flagged in constants/env.ts. No need to fill them in if you dont use it
+NEXT_PUBLIC_FEEDBACK_FISH_ID=
+NEXT_PUBLIC_GISCUS_REPO=
+NEXT_PUBLIC_GISCUS_REPO_ID=
+NEXT_PUBLIC_BLOCK_DOMAIN_WHITELIST="theodorusclarence.com"
+NEXT_PUBLIC_UMAMI_WEBSITE_ID=
 ```
 
 ## GitHub
