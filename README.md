@@ -4,6 +4,8 @@
 
 https://github.com/coding-to-music/nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres
 
+https://nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres.vercel.app
+
 From / By https://github.com/theodorusclarence/theodorusclarence.com
 
 https://theodorusclarence.com/
