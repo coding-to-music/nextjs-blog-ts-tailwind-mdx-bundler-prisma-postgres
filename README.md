@@ -152,4 +152,21 @@ Your database is now in sync with your schema.
 
 https://theodorusclarence.com/blog/spotify-now-playing
 
+### Authenticate Your Account
+
+To do authentication, we need to prepare CLIENT_ID and put it into this link below:
+
+```
+https://accounts.spotify.com/authorize?client_id=CLIENT_ID_HERE&response_type=code&redirect_uri=http
+%3A%2F%2Flocalhost:3000&scope=user-read-currently-playing
+```
+
+Output:
+
+```
+I was unable to get the `SPOTIFY_REFRESH_TOKEN` value, Spotify api just hung
+```
+
+Note that the original website has the Spotify widget removed, it is not visible (perhaps you need to be logged in to view it??)
+
 ##
