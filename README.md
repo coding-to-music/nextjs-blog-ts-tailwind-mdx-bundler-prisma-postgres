@@ -10,6 +10,18 @@ From / By https://github.com/theodorusclarence/theodorusclarence.com
 
 https://theodorusclarence.com/
 
+## Helpful Prisma projects
+
+https://github.com/coding-to-music/streets-prisma-postgresql-seed
+
+https://github.com/coding-to-music/blogr-nextjs-prisma-postgres
+
+https://github.com/coding-to-music/prisma-mongodb-cloudflare
+
+https://github.com/coding-to-music/nestjs-prisma-multi-database
+
+https://github.com/coding-to-music/vercel-postgres-prisma-serverless-cloud-database
+
 ## Environment variables:
 
 see .env.example
@@ -94,3 +106,46 @@ https://user-images.githubusercontent.com/55318172/132983796-9187857f-bbf2-4bb0-
 Check out the [tutorial](https://theodorusclarence.com/blog/spotify-now-playing).
 
 ![image](https://user-images.githubusercontent.com/55318172/132983710-000cc6c8-a466-4314-ad3f-656d9dc1a1e4.png)
+
+## Prisma Setup
+
+in `.env` change `DATABASE_URL=`
+
+from
+
+DATABASE_URL="postgresql://clarence:@localhost:5432/theodorusclarence"
+
+to
+
+`your database connection string`
+
+Then migrate the Prisma schema to the new database
+
+```
+npx prisma migrate dev --name init
+```
+
+Output
+
+```
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "databasename", schema "public" at "servername"
+
+Applying migration `20220731131832_init`
+Applying migration `20220902063121_add_like_and_views_session_id`
+
+The following migration(s) have been applied:
+
+migrations/
+  └─ 20220731131832_init/
+    └─ migration.sql
+  └─ 20220902063121_add_like_and_views_session_id/
+    └─ migration.sql
+
+Your database is now in sync with your schema.
+
+✔ Generated Prisma Client (4.12.0 | library) to ./node_modules/@prisma/client in 240ms
+```
+
+## Spotify Setup
