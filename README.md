@@ -149,3 +149,7 @@ Your database is now in sync with your schema.
 ```
 
 ## Spotify Setup
+
+https://theodorusclarence.com/blog/spotify-now-playing
+
+##
