@@ -167,6 +167,29 @@ Output:
 I was unable to get the `SPOTIFY_REFRESH_TOKEN` value, Spotify api just hung
 ```
 
+When I did
+
+```
+yarn build
+yarn start
+```
+
+and open the website in a browser (localhost:3000) I get this error:
+
+```
+    },
+    data: {
+      error: 'invalid_grant',
+      error_description: 'Invalid refresh token'
+    }
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+Segmentation fault (core dumped)
+error Command failed with exit code 139.
+```
+
 Note that the original website has the Spotify widget removed, it is not visible (perhaps you need to be logged in to view it??)
 
 ##
