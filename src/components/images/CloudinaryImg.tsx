@@ -41,6 +41,7 @@ export default function CloudinaryImg({
   const urlBlurred = buildUrl(publicId, {
     cloud: {
       cloudName: 'theodorusclarence',
+      // cloudName: 'coding-to-music',
     },
     transformations: {
       effect: {
@@ -55,6 +56,7 @@ export default function CloudinaryImg({
   const url = buildUrl(publicId, {
     cloud: {
       cloudName: 'theodorusclarence',
+      // cloudName: 'coding-to-music',
     },
     transformations: {
       rawTransformation: aspect
