@@ -8,11 +8,11 @@ import { trackEvent } from '@/lib/analytics';
 import useCopyToClipboard from '@/hooks/useCopyToClipboard';
 
 import Accent from '@/components/Accent';
-import Spotify from '@/components/layout/Spotify';
+// import Spotify from '@/components/layout/Spotify';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Tooltip from '@/components/Tooltip';
 
-import { feedbackFlag, spotifyFlag } from '@/constants/env';
+import { feedbackFlag } from '@/constants/env';
 
 export default function Footer() {
   return (
@@ -20,7 +20,7 @@ export default function Footer() {
       <main className='layout flex flex-col items-center border-t pt-6 dark:border-gray-600'>
         <FooterLinks />
 
-        {spotifyFlag && <Spotify className='mt-8' />}
+        {/* {spotifyFlag && <Spotify className='mt-8' />} */}
 
         <p className='mt-12 font-medium text-gray-600 dark:text-gray-300'>
           Reach me out
