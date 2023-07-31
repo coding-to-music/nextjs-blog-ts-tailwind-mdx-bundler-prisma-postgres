@@ -52,11 +52,6 @@ NEXT_PUBLIC_GISCUS_REPO=
 NEXT_PUBLIC_GISCUS_REPO_ID=
 NEXT_PUBLIC_BLOCK_DOMAIN_WHITELIST="theodorusclarence.com"
 NEXT_PUBLIC_UMAMI_WEBSITE_ID=
-
-data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || ''}
-src='https://umami.thcl.dev/umami.js'
-data-domains='theodorusclarence.com'
-
 ```
 
 ## GitHub
@@ -197,4 +192,18 @@ error Command failed with exit code 139.
 
 Note that the original website has the Spotify widget removed, it is not visible (perhaps you need to be logged in to view it??)
 
-##
+## Umami (similar to Google Analytics) Setup
+
+`.env` variable
+
+```
+NEXT_PUBLIC_UMAMI_WEBSITE_ID=
+```
+
+`/src/pages/_documment.tsx` uses `NEXT_PUBLIC_UMAMI_WEBSITE_ID`
+
+```
+data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || ''}
+src='https://umami.thcl.dev/umami.js'
+data-domains='theodorusclarence.com'
+```
