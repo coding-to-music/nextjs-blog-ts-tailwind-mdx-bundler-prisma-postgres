@@ -53,6 +53,10 @@ NEXT_PUBLIC_GISCUS_REPO_ID=
 NEXT_PUBLIC_BLOCK_DOMAIN_WHITELIST="theodorusclarence.com"
 NEXT_PUBLIC_UMAMI_WEBSITE_ID=
 
+data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || ''}
+src='https://umami.thcl.dev/umami.js'
+data-domains='theodorusclarence.com'
+
 ```
 
 ## GitHub
