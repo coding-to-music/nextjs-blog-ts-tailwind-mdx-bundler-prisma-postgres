@@ -27,8 +27,8 @@ class MyDocument extends Document {
             async
             defer
             data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || ''}
-            src='https://umami.thcl.dev/umami.js'
-            data-domains='theodorusclarence.com'
+            src='https://analytics.umami.is/script.js'
+            data-domains='nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres.vercel.app'
           />
         </Head>
         <body className='bg-white antialiased transition-colors dark:bg-dark dark:text-white'>
@@ -41,3 +41,6 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
+
+// src='https://umami.thcl.dev/umami.js'
+// data-domains='theodorusclarence.com'
