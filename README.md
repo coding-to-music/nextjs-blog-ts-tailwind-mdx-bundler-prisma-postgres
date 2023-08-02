@@ -107,6 +107,15 @@ Check out the [tutorial](https://theodorusclarence.com/blog/spotify-now-playing)
 
 ![image](https://user-images.githubusercontent.com/55318172/132983710-000cc6c8-a466-4314-ad3f-656d9dc1a1e4.png)
 
+## Goals to implement
+
+- What URLs are being called and what method do they use?
+- Views are not incrementing
+- DevTo Views - how does it work
+- Add my DevTo posts and monitor views and likes
+- Add a blog post
+- Add a project post
+
 # Fetch methods
 
 https://nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres.vercel.app/blog/nextjs-fetch-method
