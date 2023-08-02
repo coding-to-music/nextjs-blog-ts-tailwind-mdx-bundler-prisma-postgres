@@ -115,6 +115,10 @@ Check out the [tutorial](https://theodorusclarence.com/blog/spotify-now-playing)
 - Add my DevTo posts and monitor views and likes
 - Add a blog post
 - Add a project post
+- Import my repos into a repos sectioin
+- Have Statistics page monitor repos
+- Have Statistics page monitor stargazers, watchers, clones, forks
+- Inline graphs for statistics
 
 # Fetch methods
 
