@@ -2,6 +2,23 @@
 
 # 🚀 💠 Personal website and blog made using Next.js, TypeScript, Tailwind CSS, MDX Bundler, and Prisma with PostgreSQL 🚀
 
+### Status (see Issues Tab)
+
+### Notable Features
+
+## Goals to implement
+
+- What URLs are being called and what method do they use?
+- Views are not incrementing
+- DevTo Views - how does it work
+- Add my DevTo posts and monitor views and likes
+- Add a blog post
+- Add a project post
+- Import my repos into a repos sectioin
+- Have Statistics page monitor repos
+- Have Statistics page monitor stargazers, watchers, clones, forks
+- Inline graphs for statistics
+
 https://github.com/coding-to-music/nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres
 
 https://nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres.vercel.app
@@ -106,19 +123,6 @@ https://user-images.githubusercontent.com/55318172/132983796-9187857f-bbf2-4bb0-
 Check out the [tutorial](https://theodorusclarence.com/blog/spotify-now-playing).
 
 ![image](https://user-images.githubusercontent.com/55318172/132983710-000cc6c8-a466-4314-ad3f-656d9dc1a1e4.png)
-
-## Goals to implement
-
-- What URLs are being called and what method do they use?
-- Views are not incrementing
-- DevTo Views - how does it work
-- Add my DevTo posts and monitor views and likes
-- Add a blog post
-- Add a project post
-- Import my repos into a repos sectioin
-- Have Statistics page monitor repos
-- Have Statistics page monitor stargazers, watchers, clones, forks
-- Inline graphs for statistics
 
 # Fetch methods
 
