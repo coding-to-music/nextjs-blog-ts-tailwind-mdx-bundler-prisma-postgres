@@ -6,6 +6,12 @@
 
 ### Notable Features
 
+- Blurred Images
+- Lint
+- Prisma Postgres
+- Cypress Testing of Routes
+- Unami Analytics
+
 ## Goals to implement
 
 - What URLs are being called and what method do they use?
