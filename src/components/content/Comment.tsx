@@ -11,8 +11,8 @@ export default function Comment() {
       key={theme}
       repo={(process.env.NEXT_PUBLIC_GISCUS_REPO as Repo) || ''}
       repoId={process.env.NEXT_PUBLIC_GISCUS_REPO_ID || ''}
+      categoryId={process.env.NEXT_PUBLIC_CATEGORY_ID || ''}
       category='General'
-      categoryId='DIC_kwDOE66rZ84B--B0'
       mapping='pathname'
       reactionsEnabled='0'
       emitMetadata='0'

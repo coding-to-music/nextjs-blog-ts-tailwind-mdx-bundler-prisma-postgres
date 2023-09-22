@@ -24,10 +24,14 @@
 - Site Map for SEO
 - Husky
 - Jest
+- Hexcape (what is it?)
 - Releases with checks
 - Content Views and Likes counter on blog and shorts posts
 - Likes from Dev.to
 - Funding.yml
+- GitHub card
+- Block Increment Views except on main domain
+- Changelog.md populated via https://github.com/conventional-changelog/standard-version
 
 ## Goals to implement
 
@@ -81,7 +85,6 @@ see .env.example
 
 ```java
 # View & likes tracking
-FAUNA_SECRET=
 DATABASE_URL="postgresql://clarence:@localhost:5432/theodorusclarence"
 IP_ADDRESS_SALT=
 DEVTO_KEY=
@@ -103,7 +106,7 @@ REVUE_TOKEN=
 NEXT_PUBLIC_FEEDBACK_FISH_ID=
 NEXT_PUBLIC_GISCUS_REPO=
 NEXT_PUBLIC_GISCUS_REPO_ID=
-NEXT_PUBLIC_BLOCK_DOMAIN_WHITELIST="theodorusclarence.com"
+NEXT_PUBLIC_BLOCK_DOMAIN_WHITELIST="your-website-here.com"
 NEXT_PUBLIC_UMAMI_WEBSITE_ID=
 ```
 
@@ -118,6 +121,69 @@ git branch -M main
 git remote add origin git@github.com:coding-to-music/nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres.git
 git push -u origin main
 ```
+
+## Giscus GitHub Discussion Commenting system
+
+Instructions
+
+https://hugomods.com/en/blog/2023/05/how-to-configure-giscus/
+
+### Install the Giscus app:
+
+https://github.com/apps/giscus
+
+### Configure the Giscus app for your site:
+
+https://giscus.app/
+
+1 - Page <--> Discussion Mapping  
+2 - Enter the username/reponame  
+3 - Discussion Category  
+4 - Features  
+5 - Theme
+
+Scroll down, view the JSON that is proposed for your site. Adjust the checkboxes as needed
+
+Copy the JSON values and store into the .env values
+
+Here is how the settings are implemented in this website
+
+```java
+// /src/common/components/content.tsx
+
+import { Box, Container, Heading, useColorModeValue } from '@chakra-ui/react';
+import Giscus from '@giscus/react';
+
+const CommentBox = () => {
+  const giscusTheme = useColorModeValue('light', 'dark');
+
+  return (
+    <Container maxW={'container.md'} my={10}>
+      <Heading size={'md'}>LEAVE A COMMENT OR START A DISCUSSION</Heading>
+      <Box my={10}>
+        <Giscus
+          repo={process.env.NEXT_PUBLIC_GISCUS_REPO}
+          repoId={process.env.NEXT_PUBLIC_GISCUS_REPO_ID}
+          category={process.env.NEXT_PUBLIC_GISCUS_CATEGORY}
+          categoryId={process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID}
+          mapping="url"
+          reactionsEnabled="1"
+          emitMetadata="0"
+          inputPosition="top"
+          theme={giscusTheme}
+          lang="en"
+          loading="lazy"
+          crossorigin="anonymous"
+        />
+      </Box>
+    </Container>
+  );
+};
+
+export default CommentBox;
+```
+
+## Begin original README.md
 
 <div align="center">
   <h1>theodorusclarence.com</h1>

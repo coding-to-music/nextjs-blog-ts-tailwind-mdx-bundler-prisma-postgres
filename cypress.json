@@ -1,6 +1,6 @@
 {
-  "baseUrl": "https://theodorusclarence.com",
-  "projectId": "zk1sui",
+  "baseUrl": "https://nextjs-blog-ts-tailwind-mdx-bundler-prisma-postgres.vercel.app",
+  "projectId": "divzhn",
   "retries": {
     "runMode": 2
   }
