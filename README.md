@@ -6,13 +6,43 @@
 
 ### Notable Features
 
+- Typescript
+- Tailwind
+- Cloudinary
 - Blurred Images
 - Lint
-- Prisma Postgres
+- Prettier
+- Prisma Postgres - ContentMeta (slugs), Likes, Views
+- Prisma Fauna for backup of Views and Likes by User (obsolete, replaced by Postgres)
+- Prisma Seed of Fauna backup data when moved to Postgres, not used after that
 - Cypress Testing of Routes
-- Unami Analytics
+- Unami Analytics for every route
+- Statistics Page using Unami
+- Search Blogs/Shorts by Tags
+- Link Shortener
+- Custom Domain
+- Site Map for SEO
+- Husky
+- Jest
+- Releases with checks
+- Content Views and Likes counter on blog and shorts posts
+- Likes from Dev.to
+- Funding.yml
 
 ## Goals to implement
+
+- .env DEVTO_KEY
+- .env FAUNA_SECRET
+- .env IP_ADDRESS_SALT
+- .env CLOUDFLARE_ZONE
+- .env CLOUDFLARE_TOKEN
+- .env Dev Tools hidden route & admin password
+- .env Substack is now being used rather than Revue
+- .env Unami website ID
+- .env NEXT_PUBLIC_FEEDBACK_FISH_ID=
+- .env NEXT_PUBLIC_GISCUS_REPO=
+- .env NEXT_PUBLIC_GISCUS_REPO_ID=
+- .env NEXT_PUBLIC_BLOCK_DOMAIN_WHITELIST=
 
 - What URLs are being called and what method do they use?
 - Views are not incrementing
@@ -20,7 +50,7 @@
 - Add my DevTo posts and monitor views and likes
 - Add a blog post
 - Add a project post
-- Import my repos into a repos sectioin
+- Import my repos into a repos section
 - Have Statistics page monitor repos
 - Have Statistics page monitor stargazers, watchers, clones, forks
 - Inline graphs for statistics
