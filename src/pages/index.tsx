@@ -56,7 +56,7 @@ export default function IndexPage({
               className='mt-1 text-3xl md:text-5xl 2xl:text-6xl'
               data-fade='2'
             >
-              You can call me <Accent>Clarence</Accent>
+              You can call me <Accent>BloggerName</Accent>
             </h1>
             <p
               className={clsx(

@@ -10,12 +10,12 @@ describe('All Page', () => {
 
   it('should display index page', () => {
     cy.visit('/');
-    cy.get('h1').should('contain', 'You can call me Clarence');
+    cy.get('h1').should('contain', 'You can call me BloggerName');
   });
 
   it('should display about page', () => {
     cy.visit('/about');
-    cy.get('h1').should('contain', 'Theodorus Clarence');
+    cy.get('h1').should('contain', 'BloggerName');
   });
 
   it('should display blog page', () => {

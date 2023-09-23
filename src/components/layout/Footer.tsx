@@ -28,7 +28,7 @@ export default function Footer() {
         <SocialLinks />
 
         <p className='mt-8 text-sm text-gray-600 dark:text-gray-300'>
-          © Theodorus Clarence {new Date().getFullYear()}
+          © BloggerName {new Date().getFullYear()}
           {feedbackFlag && (
             <>
               {' • '}
@@ -85,14 +85,14 @@ function SocialLinks() {
                 ? 'Click the mail logo to copy'
                 : 'Copied to clipboard 🥳'}
               <Accent className='inline-block font-medium'>
-                me@theodorusclarence.com
+                me@BloggerName.com
               </Accent>
             </div>
           }
         >
           <button
             onClick={() => {
-              copy('me@theodorusclarence.com').then(() => {
+              copy('me@BloggerName.com').then(() => {
                 setCopyStatus('copied');
                 setTimeout(() => setCopyStatus('idle'), 1500);
               });
@@ -138,7 +138,7 @@ const footerLinks: { href: string; text: string; tooltip: React.ReactNode }[] =
     {
       href: '/design',
       text: 'Design',
-      tooltip: 'theodorusclarence.com color palette',
+      tooltip: 'BloggerName.com color palette',
     },
     {
       href: 'https://clarence.link/docs',
@@ -158,7 +158,7 @@ const footerLinks: { href: string; text: string; tooltip: React.ReactNode }[] =
     {
       href: 'https://clarence.link/um',
       text: 'Analytics',
-      tooltip: 'theodorusclarence.com views and visitors analytics',
+      tooltip: 'BloggerName.com views and visitors analytics',
     },
     {
       href: '/statistics',
@@ -177,9 +177,9 @@ const footerLinks: { href: string; text: string; tooltip: React.ReactNode }[] =
       tooltip: 'Get an email whenever I post, no spam',
     },
     {
-      href: 'https://theodorusclarence.com/rss.xml',
+      href: 'https://BloggerName.com/rss.xml',
       text: 'RSS',
-      tooltip: 'Add theodorusclarence.com blog to your feeds',
+      tooltip: 'Add BloggerName.com blog to your feeds',
     },
   ];
 
