@@ -32,6 +32,7 @@
 - GitHub card
 - Block Increment Views except on main domain
 - Changelog.md populated via https://github.com/conventional-changelog/standard-version
+- 
 
 ## Goals to implement
 
